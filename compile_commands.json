@@ -1,0 +1,146 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-Wall",
+      "-Wextra",
+      "-Isrc/glad/include",
+      "-Iextern/cglm/include",
+      "-o",
+      "build/player.o",
+      "src/character/player.c"
+    ],
+    "directory": "/home/lucius/dev/rouge_souls",
+    "file": "/home/lucius/dev/rouge_souls/src/character/player.c",
+    "output": "/home/lucius/dev/rouge_souls/build/player.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-Wall",
+      "-Wextra",
+      "-Isrc/glad/include",
+      "-Iextern/cglm/include",
+      "-o",
+      "build/stats.o",
+      "src/character/stats.c"
+    ],
+    "directory": "/home/lucius/dev/rouge_souls",
+    "file": "/home/lucius/dev/rouge_souls/src/character/stats.c",
+    "output": "/home/lucius/dev/rouge_souls/build/stats.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-Wall",
+      "-Wextra",
+      "-Isrc/glad/include",
+      "-Iextern/cglm/include",
+      "-o",
+      "build/clog.o",
+      "src/clog.c"
+    ],
+    "directory": "/home/lucius/dev/rouge_souls",
+    "file": "/home/lucius/dev/rouge_souls/src/clog.c",
+    "output": "/home/lucius/dev/rouge_souls/build/clog.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-Wall",
+      "-Wextra",
+      "-Isrc/glad/include",
+      "-Iextern/cglm/include",
+      "-o",
+      "build/glad.o",
+      "src/glad/src/glad.c"
+    ],
+    "directory": "/home/lucius/dev/rouge_souls",
+    "file": "/home/lucius/dev/rouge_souls/src/glad/src/glad.c",
+    "output": "/home/lucius/dev/rouge_souls/build/glad.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-Wall",
+      "-Wextra",
+      "-Isrc/glad/include",
+      "-Iextern/cglm/include",
+      "-o",
+      "build/keycodes.o",
+      "src/keycodes.c"
+    ],
+    "directory": "/home/lucius/dev/rouge_souls",
+    "file": "/home/lucius/dev/rouge_souls/src/keycodes.c",
+    "output": "/home/lucius/dev/rouge_souls/build/keycodes.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-Wall",
+      "-Wextra",
+      "-Isrc/glad/include",
+      "-Iextern/cglm/include",
+      "-o",
+      "build/main.o",
+      "src/main.c"
+    ],
+    "directory": "/home/lucius/dev/rouge_souls",
+    "file": "/home/lucius/dev/rouge_souls/src/main.c",
+    "output": "/home/lucius/dev/rouge_souls/build/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-Wall",
+      "-Wextra",
+      "-Isrc/glad/include",
+      "-Iextern/cglm/include",
+      "-o",
+      "build/render.o",
+      "src/render/render.c"
+    ],
+    "directory": "/home/lucius/dev/rouge_souls",
+    "file": "/home/lucius/dev/rouge_souls/src/render/render.c",
+    "output": "/home/lucius/dev/rouge_souls/build/render.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-Wall",
+      "-Wextra",
+      "-Isrc/glad/include",
+      "-Iextern/cglm/include",
+      "-o",
+      "build/render_graphics.o",
+      "src/render/render_graphics.c"
+    ],
+    "directory": "/home/lucius/dev/rouge_souls",
+    "file": "/home/lucius/dev/rouge_souls/src/render/render_graphics.c",
+    "output": "/home/lucius/dev/rouge_souls/build/render_graphics.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-Wall",
+      "-Wextra",
+      "-Isrc/glad/include",
+      "-Iextern/cglm/include",
+      "-o",
+      "build/render_utils.o",
+      "src/render/render_utils.c"
+    ],
+    "directory": "/home/lucius/dev/rouge_souls",
+    "file": "/home/lucius/dev/rouge_souls/src/render/render_utils.c",
+    "output": "/home/lucius/dev/rouge_souls/build/render_utils.o"
+  }
+]

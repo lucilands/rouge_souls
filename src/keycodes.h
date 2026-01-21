@@ -23,7 +23,7 @@ typedef enum key {
     keycode_a                  = 65,
     keycode_b                  = 66,
     keycode_c                  = 67,
-    keycode_d                 = 68,
+    keycode_d                  = 68,
     keycode_e                  = 69,
     keycode_f                  = 70,
     keycode_g                  = 71,

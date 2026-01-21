@@ -53,5 +53,6 @@ void draw_sprite(window_t *win, sprite_t s);
 double get_time();
 
 bool key_pressed(window_t *win, key key_code);
+bool key_released(window_t *win, key key_code);
 
 #endif //_RENDER_H

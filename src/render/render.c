@@ -118,3 +118,7 @@ void toggle_fullscreen(window_t *win) {
 bool key_pressed(window_t *win, key key_code) {
     return glfwGetKey(win->win, (int)key_code) == GLFW_PRESS;
 }
+
+bool key_released(window_t *win, key key_code) {
+    return glfwGetKey(win->win, (int)key_code) == GLFW_RELEASE;
+}

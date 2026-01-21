@@ -30,5 +30,5 @@ build/bin/assets: build/bin
 	@echo "  CP	$@"
 	@cp -r assets build/bin/
 
-build/bin:
+build/bin build:
 	mkdir -p $@

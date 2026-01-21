@@ -1,10 +1,11 @@
-#include <stdio.h>
 #include <stdlib.h>
 
 
 #include "render/render.h"
 #include "character/player.h"
 
+
+float braking_power = 0.7f;
 
 int main(void) {
     window_t *win = create_window(1080, 720, "Rouge souls");
@@ -13,15 +14,24 @@ int main(void) {
     player_t player = create_player(helmet, create_stats(1.0f));
 
     init_textures();
-    while (is_window_open(win)) {
-        clear_window(float3(1.0f, 1.0f, 1.0f));
 
-        if (key_pressed(win, keycode_w)) get_player_rect(&player)->position.y += 1.0f * delta_time;
-        if (key_pressed(win, keycode_s)) get_player_rect(&player)->position.y -= 1.0f * delta_time;
-        if (key_pressed(win, keycode_d)) get_player_rect(&player)->position.x += 1.0f * delta_time;
-        if (key_pressed(win, keycode_a)) get_player_rect(&player)->position.x -= 1.0f * delta_time;
+    rect_t *player_rect = get_player_rect(&player);
+
+    while (is_window_open(win)) {
+        clear_window(float3(0.0f, 0.0f, 0.0f));
+
+        if (key_pressed(win, keycode_w)) player.velocity.y += player.stats.speed;
+        if (key_pressed(win, keycode_s)) player.velocity.y -= player.stats.speed;
+        if (key_pressed(win, keycode_d)) player.velocity.x += player.stats.speed;
+        if (key_pressed(win, keycode_a)) player.velocity.x -= player.stats.speed;
 
         if (key_pressed(win, keycode_f)) toggle_fullscreen(win);
+        
+        player_rect->position.x += player.velocity.x * delta_time;
+        player_rect->position.y += player.velocity.y * delta_time;
+
+        player.velocity.x *= braking_power;
+        player.velocity.y *= braking_power;
 
         draw_sprite(win, player.sprite);
 
